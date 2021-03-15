@@ -1,0 +1,95 @@
+.header-inicio{
+    background-color: #29254A;
+}
+.barra{
+   // background-color: #1E1B3B;
+    background-color: rgba($color: #221f3f, $alpha: .7);
+    height: 12rem;
+    padding: 1rem 0;
+    box-shadow: 0px 2px 0px #25214b;
+    img{
+        height: 100%;
+        object-fit: cover;
+    }
+    .navegacion{
+        a{
+            font-weight: $regular;
+            color: $blanco;
+            font-size: 1.8rem;
+            text-align: center;
+         //   position: relative;
+            @include tablet{
+                margin-right: 2.5rem;
+                &:last-of-type{
+                    margin-right: 0;
+                }
+            }
+            // &:hover{
+            //     &::after{
+            //         content: '';
+            //         position: absolute;
+            //         top: 1.5rem;
+            //         right: 3rem;
+            //         width: 4rem;
+            //         height: .5rem;
+            //         background-color: $verde;
+            //         margin-top: 1rem;
+            //     }
+            // }
+        }
+    }
+    .barra-derecha{
+        padding: 4rem 0;
+    }
+}
+
+.contenido-presentacion{
+    padding-top: 2rem;
+    div>h1{
+        font-weight: $bold;
+    }   
+    .iconos{
+        a{
+            color: $blanco;
+            margin-right: 1.2rem;
+            font-size: 3rem;
+            font-weight: $delgada;
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
+        i{
+            padding: 1rem;
+            border: 2.2px solid #0fa59d;
+            border-radius: 50%;
+            &:hover{
+                border: 2.2px solid #da5151;
+            }
+        }
+    }
+    .presentacion{
+        margin-top: 30vh;
+        margin-left: 9.7vw;
+        .presentacion-izquierda{
+            line-height: 1.5;
+            margin-bottom: 3rem;
+            h1, h2, h3 {
+                
+                margin: 0;  
+                color: $gris;             
+            }
+            h2, h3{
+                font-weight: $delgada;
+            }
+        }
+    }
+    .perfil{
+       width: 30vw;
+       min-height: 75vh;
+    }
+}
+.contact-me{
+    @include boton(#0fa59d, $gris, inline-block);
+    text-transform: uppercase;
+    margin-bottom: $separacion;
+}

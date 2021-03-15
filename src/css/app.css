@@ -337,8 +337,7 @@ picture {
 h1, h2, h3 {
   font-family: "Lato", sans-serif;
   margin: 2.5rem 0;
-  font-weight: 300;
-  text-align: center; }
+  font-weight: 300; }
 
 h1 {
   font-size: 3.8rem; }
@@ -352,9 +351,89 @@ h3 {
 h4 {
   font-size: 2.6rem; }
 
+.flex-between {
+  display: flex;
+  justify-content: space-between; }
+
+.flex-around {
+  display: flex;
+  justify-content: space-around; }
+
 .seccion {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem; }
 
 .contenido-centrado {
   max-width: 800px; }
+
+.header-inicio {
+  background-color: #29254A; }
+
+.barra {
+  background-color: rgba(34, 31, 63, 0.7);
+  height: 12rem;
+  padding: 1rem 0;
+  box-shadow: 0px 2px 0px #25214b; }
+  .barra img {
+    height: 100%;
+    object-fit: cover; }
+  .barra .navegacion a {
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .barra .navegacion a {
+        margin-right: 2.5rem; }
+        .barra .navegacion a:last-of-type {
+          margin-right: 0; } }
+  .barra .barra-derecha {
+    padding: 4rem 0; }
+
+.contenido-presentacion {
+  padding-top: 2rem; }
+  .contenido-presentacion div > h1 {
+    font-weight: 700; }
+  .contenido-presentacion .iconos a {
+    color: #FFFFFF;
+    margin-right: 1.2rem;
+    font-size: 3rem;
+    font-weight: 300; }
+    .contenido-presentacion .iconos a:last-of-type {
+      margin-right: 0; }
+  .contenido-presentacion .iconos i {
+    padding: 1rem;
+    border: 2.2px solid #0fa59d;
+    border-radius: 50%; }
+    .contenido-presentacion .iconos i:hover {
+      border: 2.2px solid #da5151; }
+  .contenido-presentacion .presentacion {
+    margin-top: 30vh;
+    margin-left: 9.7vw; }
+    .contenido-presentacion .presentacion .presentacion-izquierda {
+      line-height: 1.5;
+      margin-bottom: 3rem; }
+      .contenido-presentacion .presentacion .presentacion-izquierda h1, .contenido-presentacion .presentacion .presentacion-izquierda h2, .contenido-presentacion .presentacion .presentacion-izquierda h3 {
+        margin: 0;
+        color: #e1e1e1; }
+      .contenido-presentacion .presentacion .presentacion-izquierda h2, .contenido-presentacion .presentacion .presentacion-izquierda h3 {
+        font-weight: 300; }
+  .contenido-presentacion .perfil {
+    width: 30vw;
+    min-height: 75vh; }
+
+.contact-me {
+  background-color: #0fa59d;
+  color: #e1e1e1;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  display: inline-block;
+  border: none;
+  text-transform: uppercase;
+  margin-bottom: 5rem; }
+  .contact-me:hover {
+    background-color: #0d8e87;
+    cursor: pointer; }
