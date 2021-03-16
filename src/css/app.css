@@ -359,6 +359,9 @@ h4 {
   display: flex;
   justify-content: space-around; }
 
+.top-5 {
+  margin-top: 5rem; }
+
 .seccion {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem; }
@@ -387,6 +390,8 @@ h4 {
         margin-right: 2.5rem; }
         .barra .navegacion a:last-of-type {
           margin-right: 0; } }
+    .barra .navegacion a:hover {
+      color: #0fa59d; }
   .barra .barra-derecha {
     padding: 4rem 0; }
 
@@ -438,22 +443,22 @@ h4 {
     background-color: #0d8e87;
     cursor: pointer; }
 
-#about-title {
+.title {
   text-align: center;
-  font-weight: 400; }
-  #about-title::before {
+  font-weight: 400;
+  position: relative; }
+  .title::before {
     content: '';
     position: absolute;
     top: 5rem;
-    right: 63.5rem;
-    width: 17rem;
+    right: 31vw;
+    width: 7vw;
     height: .5rem;
     background-color: #0fa59d;
     margin-top: 1rem; }
 
 .about-me {
-  margin: 0 15vw;
-  position: relative; }
+  margin: 0 15vw; }
   .about-me .about-content {
     margin-top: 8rem;
     display: grid;
@@ -483,3 +488,46 @@ h4 {
       .about-me .about-content .about-text .boton-about:hover {
         background-color: #0d8e87;
         cursor: pointer; }
+
+.skills-content {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 15vw;
+  margin-top: 8rem; }
+
+.image-programming {
+  width: 35vw;
+  height: 40vh;
+  background-position: center;
+  object-fit: contain; }
+
+/* ===== SKILLS =====*/
+.skills-title {
+  text-align: center;
+  font-weight: 400;
+  position: relative; }
+  .skills-title::before {
+    content: '';
+    position: absolute;
+    top: 5rem;
+    right: 46.5vw;
+    width: 6vw;
+    height: .5rem;
+    background-color: #0fa59d;
+    margin-top: 1rem; }
+
+.skills-subtitle {
+  font-weight: 700;
+  color: #1177eb; }
+
+.technologies span {
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: rgba(240, 240, 240, 0.5);
+  border-radius: 15%;
+  text-align: center; }
+
+.technologies .databases {
+  margin-top: 5rem; }
