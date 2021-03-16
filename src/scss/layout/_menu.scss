@@ -1,12 +1,11 @@
 .header-inicio{
-    background-color: #29254A;
+    background-color: #28263b;
 }
 .barra{
-   // background-color: #1E1B3B;
-    background-color: rgba($color: #221f3f, $alpha: .7);
+    background-color: rgba($color: #202030, $alpha: .7);
     height: 12rem;
     padding: 1rem 0;
-    box-shadow: 0px 2px 0px #25214b;
+    box-shadow: 0px 2px 0px #22223a;
     img{
         height: 100%;
         object-fit: cover;
@@ -24,19 +23,8 @@
                     margin-right: 0;
                 }
             }
-            // &:hover{
-            //     &::after{
-            //         content: '';
-            //         position: absolute;
-            //         top: 1.5rem;
-            //         right: 3rem;
-            //         width: 4rem;
-            //         height: .5rem;
-            //         background-color: $verde;
-            //         margin-top: 1rem;
-            //     }
-            // }
         }
+
     }
     .barra-derecha{
         padding: 4rem 0;
@@ -85,7 +73,7 @@
     }
     .perfil{
        width: 30vw;
-       min-height: 75vh;
+       min-height: 75vh;    
     }
 }
 .contact-me{

@@ -367,13 +367,13 @@ h4 {
   max-width: 800px; }
 
 .header-inicio {
-  background-color: #29254A; }
+  background-color: #28263b; }
 
 .barra {
-  background-color: rgba(34, 31, 63, 0.7);
+  background-color: rgba(32, 32, 48, 0.7);
   height: 12rem;
   padding: 1rem 0;
-  box-shadow: 0px 2px 0px #25214b; }
+  box-shadow: 0px 2px 0px #22223a; }
   .barra img {
     height: 100%;
     object-fit: cover; }
@@ -437,3 +437,49 @@ h4 {
   .contact-me:hover {
     background-color: #0d8e87;
     cursor: pointer; }
+
+#about-title {
+  text-align: center;
+  font-weight: 400; }
+  #about-title::before {
+    content: '';
+    position: absolute;
+    top: 5rem;
+    right: 63.5rem;
+    width: 17rem;
+    height: .5rem;
+    background-color: #0fa59d;
+    margin-top: 1rem; }
+
+.about-me {
+  margin: 0 15vw;
+  position: relative; }
+  .about-me .about-content {
+    margin-top: 8rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr); }
+    .about-me .about-content .img-about {
+      width: 30vw;
+      height: 48vh;
+      object-fit: contain; }
+    .about-me .about-content .about-text h2 {
+      font-weight: 700; }
+    .about-me .about-content .about-text p {
+      font-weight: 300;
+      width: 90%; }
+    .about-me .about-content .about-text .boton-about {
+      background-color: #0fa59d;
+      color: #e1e1e1;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 1rem 3rem;
+      text-align: center;
+      margin-top: 2.5rem;
+      display: inline-block;
+      border: none;
+      text-transform: uppercase;
+      margin-bottom: 5rem; }
+      .about-me .about-content .about-text .boton-about:hover {
+        background-color: #0d8e87;
+        cursor: pointer; }
