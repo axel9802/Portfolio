@@ -34,7 +34,24 @@
     border: none;
 
     &:hover{
-        background-color: darken($bgColor, 5);
+        // background-color: darken($bgColor, 5);
         cursor: pointer;
+        background-color: #da5151;
     }
+}
+
+@mixin subrayado($right, $width) {
+    content: '';
+    position: absolute;
+    top: 5.5rem;
+    right: $right;
+    width: $width;
+    height: .5rem;
+    background-color: #0fa59d;
+    margin-top: 1rem;
+}
+@mixin title {
+    text-align: center;
+    font-weight: $regular;
+    position: relative;
 }

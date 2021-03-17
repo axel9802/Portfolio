@@ -1,25 +1,16 @@
 .title{
-    text-align: center;
-    font-weight: $regular;
-    position: relative;
+    @include title;
     &::before{
-        content: '';
-        position: absolute;
-        top: 5rem;
-        right: 31vw;
-        width: 7vw;
-        height: .5rem;
-        background-color: #0fa59d;
-        margin-top: 1rem;
+        @include subrayado(31vw, 7vw);
     }
 }
 .about-me{
     margin: 0 15vw;
     .about-content{
-        margin-top: 8rem;
         @include grid(2, 2rem);       
         .img-about{
-            width: 30vw;
+            // width: 30vw;
+            // width: 100%;
             height: 48vh;
             object-fit: contain;
         }
@@ -29,12 +20,8 @@
             }
             p{
                 font-weight: $delgada;
-                width: 90%;
-            }
-            .boton-about{
-                @include boton(#0fa59d, $gris, inline-block);
-                text-transform: uppercase;
-                margin-bottom: $separacion;
+                width: 89%;
+                // width: 30vw
             }
         }    
     }

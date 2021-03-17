@@ -1,4 +1,5 @@
 html {
+    scroll-behavior: smooth;
     font-size: 62.5%;
     box-sizing: border-box;
 }
@@ -62,4 +63,12 @@ h4 {
 
 .top-5{
     margin-top: 5rem;
+}
+.top-8{
+    margin-top: 8rem;
+}
+.button{
+    @include boton(#0fa59d, $gris, inline-block);
+    text-transform: uppercase;
+    margin-bottom: $separacion;
 }
