@@ -1,0 +1,75 @@
+.contact-title{
+    @include title;
+    &::before{
+        @include subrayado(46vw, 7vw);
+    }
+}
+.contact-content{
+    @include tablet{
+        @include grid(2,0);
+        width: 100%;
+    }
+    .contact-izq{
+        display: flex;
+        height: 65px;
+        align-items: center;
+        margin-bottom: 3rem;
+        .contact-izq-txt{
+            margin-left: 2vw;
+            .contact-izq-txt-title{
+                font-size: 2rem;
+                font-weight: $black;
+            }
+            .contact-izq-txt-content{
+                font-size: 2rem;
+                font-weight: $regular;
+                width: 100%;
+            }
+        }
+        i{
+            font-size: 2.5rem;
+            width: 2.5rem;
+            color: #da5151;
+        }
+    
+    }
+
+    .contact-derecha{
+        .name{
+            margin-right: 1rem;
+        }
+        .email{
+            margin-left: 1rem;
+        }
+    }
+
+    .field input, textarea{
+        height: 100%;
+        width: 100%;
+        border: 1px solid lightgrey;
+        border-radius: 6px;
+        outline: none;
+        padding: 1rem 2rem;
+        font-size: 1.7rem;
+        font-weight: $regular;
+    }
+    .fields{
+        display: flex;
+        .field{       
+            width: 100%;       
+        }
+    }
+    .field{
+        height: 4.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .textarea{
+        height: 16rem;
+        textarea{
+            padding-top: 1rem;
+            resize: none;
+        }
+    }    
+}
+

@@ -1,5 +1,7 @@
 .header-inicio{
     background-color: #28263b;
+    // height: 100vh;
+    // width: 130vw;
 }
 .barra{
     // background-color: rgba($color: #202030, $alpha: .7);
@@ -41,10 +43,18 @@
 
 .contenido-presentacion{
     padding-top: 2rem;
+    // height: 89vh;
     div>h1{
-        font-weight: $bold;
+        font-weight: $black;
         color: $blanco;
-    }   
+    } 
+    div>h2>span{
+        font-weight: $bold;
+        color: $gris;
+    } 
+    #typing{
+        color: #0fa59d;
+    }
     .iconos{
         a{
             color: $gris;
@@ -82,6 +92,7 @@
     .perfil{
        width: 32vw;
        min-height: 75vh;
-       margin-right: 8vw; 
+       margin-right: 8vw; //ga
+       
     }
 }
