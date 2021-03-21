@@ -1,17 +1,17 @@
+.skills-title{
+    @include title;
+    &::after{
+        @include subrayado(30.7vh);
+    }
+}
+
 .skills-content{
     @include grid(2, 2rem);
     // margin: 0 15vw;
-
-    .image-programming{
-        // width: 40vw;
-        // max-height: 10vh;
-        // margin-right: 0;
-        // width: 40vw;
-        // width: 80%;
+    // margin-top: 8vh;
+    .skills-img{
         border-radius: 6px;
-        height: 35vh;
-        // background-position: center;
-        object-fit: cover;
+        margin-top: 3vh;
     }
     .skills-subtitle{
         font-weight: $bold;
@@ -35,9 +35,3 @@
     }
 }
 
-.skills-title{
-    @include title;
-    &::before{
-        @include subrayado(46.5vw, 6vw);
-    }
-}

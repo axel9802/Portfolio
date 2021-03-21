@@ -1,13 +1,17 @@
 .title{
     @include title;
-    &::before{
-        @include subrayado(31vw, 7vw);
+    // &::before{
+    //     @include subrayado(31vw, 7vw);
+    // }
+    &::after{
+        @include subrayado(30.7vh);
     }
 }
 .about-me{
     margin: 0 15vw;
     .about-content{
-        @include grid(2, 2rem);       
+        @include grid(2, 2rem);  
+        // margin-top: 8vh;     
         .img-about{
             // width: 30vw;
             // width: 100%;

@@ -4,6 +4,7 @@
 .footer-content{
     // flex-grow: 20rem;
     // width: 100%;
+    @include flex-around;
     .footer-description{
         width: 17vw;
     }
@@ -29,7 +30,7 @@
     }
 }
 .footer-data{
-    margin: 4rem 0;
+    margin: 2rem 0;
     a{
         color: rgba(172, 172, 172, 0.534);
         margin-right: 1.2rem;
@@ -55,5 +56,4 @@
             color: #0fa59d;
         }
     }
-
 }

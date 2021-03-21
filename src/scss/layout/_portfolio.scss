@@ -2,8 +2,8 @@
     background-color: $blanco;
     .portfolio-title{
         @include title;
-        &::before{
-            @include subrayado(45.5vw, 8vw);
+        &::after{
+            @include subrayado(30.7vh);
         }
     }
 }
@@ -11,6 +11,7 @@
     @include grid(3,2rem);
     justify-items: center;
     row-gap: 2rem;
+    // margin-top: 8vh;
     .portfolio-image{
         position: relative;
         overflow: hidden;

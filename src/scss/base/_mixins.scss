@@ -40,13 +40,26 @@
     }
 }
 
-@mixin subrayado($right, $width) {
-    content: '';
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flex-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+@mixin subrayado($top) {
     position: absolute;
-    top: 5.5rem;
-    right: $right;
-    width: $width;
+    content: '';
+    width: 10rem;
     height: .5rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    // top: 30vh;
+    top: $top;
     background-color: #0fa59d;
     margin-top: 1rem;
 }
@@ -54,4 +67,6 @@
     text-align: center;
     font-weight: $regular;
     position: relative;
+    // margin-top: 10vh;
+    padding-top: 25vh;
 }
